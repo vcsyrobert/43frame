@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>43frame - Maintenance</title>
+  <meta name="description"
+    content="43frame is a Romanian video production company specializing in authentic freelance video projects." />
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'WorkSans', sans-serif;
+      background-color: black;
+    }
+
+    /* === FONT === */
+    @font-face {
+      font-family: 'WorkSans';
+      src: url('WorkSans-VariableFont.ttf');
+    }
+
+    /* === FOCUS === */
+    :focus {
+      outline: none;
+    }
+
+    :focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem #d82727ff;
+    }
+
+    /* === LAYOUT === */
+    main {
+      flex: 1;
+      padding: 0 11rem 0;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    /* ===== INFO SECTION ===== */
+    .info-section {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      color: white;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .info-section .text,
+    .info-section .image {
+      flex: 1 1 0;
+    }
+
+    .info-section .image {
+      user-select: none;
+    }
+
+    .info-section .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info-section .text h2 {
+      font-size: 2rem;
+    }
+
+    .info-section .text p {
+      font-size: 1rem;
+    }
+
+    .info-section .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* === MEDIA QUERIES === */
+    @media (max-width: 67.5rem) {
+      .info-section .image {
+        max-width: 20rem;
+      }
+
+      .info-section .text h2 {
+        font-size: 1.6rem;
+      }
+
+      .info-section .text p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 57.5rem) {
+      .info-section .image {
+        max-width: 15rem;
+      }
+
+      .info-section .text h2 {
+        font-size: 1.4rem;
+      }
+
+      .info-section .text p {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 50rem) {
+      main {
+        padding: 2rem 2rem 0;
+      }
+
+      .info-section .text h2 {
+        font-size: 1.2rem;
+      }
+
+      .info-section .text p {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 37.5rem) {
+      .info-section .image {
+        max-width: 13rem;
+      }
+
+      .info-section .text h2 {
+        font-size: 1.1rem;
+      }
+
+      .info-section .text p {
+        font-size: 0.75rem;
+      }
+    }
+
+    @media (max-width: 28.75rem) {
+      .info-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
+      .info-section .image {
+        order: -1;
+      }
+
+      .info-section .text h2 {
+        font-size: 1rem;
+      }
+
+      .info-section .text p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main role="main">
+
+    <section class="info-section" aria-labelledby="about-heading">
+
+      <div class="text">
+        <h2 id="about-heading">WE'LL BE RIGHT BACK!</h2>
+        <p>Our website is currently undergoing maintenance to improve your experience.<br>
+        Thank you for your patience — we’ll be back online shortly!</p>
+      </div>
+      <figure class="image">
+        <img src="motion_design.gif" alt="Maintenance animation" />
+      </figure>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
